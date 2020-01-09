@@ -12,10 +12,43 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        self.initTitleNew()
+        // Do any additional setup after loading
+        self.initTitleInput()
     }
-
+    
+    // MARK: - 타이틀에 텍스트 필드 사용하기
+    func initTitleInput() {
+        let tf = UITextField(frame: CGRect(x: 0, y: 0, width: 300, height: 35))
+        tf.backgroundColor = UIColor.white
+        tf.font = UIFont.systemFont(ofSize: 13)
+        tf.autocapitalizationType = .none
+        tf.autocorrectionType = .no
+        tf.spellCheckingType = .no
+        tf.keyboardType = .URL
+        tf.keyboardAppearance = .dark
+        tf.layer.borderWidth = 0.3
+        tf.layer.borderColor = UIColor.init(red: 0.60, green: 0.60, blue: 0.60, alpha: 1.0).cgColor
+        
+        self.navigationItem.titleView = tf
+        
+        let v = UIView(frame: CGRect(x: 0, y: 0, width: 150, height: 37))
+        v.backgroundColor = UIColor.brown
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: v)
+        
+        let rv = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 37))
+        rv.backgroundColor = UIColor.red
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rv)
+    }
+    
+    
+    // MARK: - 타이틀에 이미지 표현하기
+    func initTitleImage() {
+        let imageV = UIImageView(image: UIImage(named: "swift_logo"))
+        self.navigationItem.titleView = imageV
+    }
+    
+    // MARK: - 라벨두개사용
     func initTitleNew() {
         let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 36))
         
@@ -42,6 +75,7 @@ class ViewController: UIViewController {
         
     }
     
+    // MARK: - 기본 사용법
     func initTitle() {
         let nTitle = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
         nTitle.numberOfLines = 2

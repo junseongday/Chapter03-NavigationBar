@@ -13,6 +13,9 @@
 		5BC6A24C23C760ED00E0CCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6A24A23C760ED00E0CCEC /* Main.storyboard */; };
 		5BC6A24E23C760EE00E0CCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6A24D23C760EE00E0CCEC /* Assets.xcassets */; };
 		5BC6A25123C760EE00E0CCEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6A24F23C760EE00E0CCEC /* LaunchScreen.storyboard */; };
+		5BC6A25C23C76B4500E0CCEC /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6A25923C76B4500E0CCEC /* more@2x.png */; };
+		5BC6A25D23C76B4500E0CCEC /* swift_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6A25A23C76B4500E0CCEC /* swift_logo@3x.png */; };
+		5BC6A25E23C76B4500E0CCEC /* arrow-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6A25B23C76B4500E0CCEC /* arrow-back@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		5BC6A24D23C760EE00E0CCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BC6A25023C760EE00E0CCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BC6A25223C760EE00E0CCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC6A25923C76B4500E0CCEC /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@2x.png"; sourceTree = "<group>"; };
+		5BC6A25A23C76B4500E0CCEC /* swift_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swift_logo@3x.png"; sourceTree = "<group>"; };
+		5BC6A25B23C76B4500E0CCEC /* arrow-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-back@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		5BC6A23823C760ED00E0CCEC = {
 			isa = PBXGroup;
 			children = (
+				5BC6A25823C76B0F00E0CCEC /* Resources */,
 				5BC6A24323C760ED00E0CCEC /* Chapter03-NavigationBar */,
 				5BC6A24223C760ED00E0CCEC /* Products */,
 			);
@@ -65,6 +72,16 @@
 				5BC6A25223C760EE00E0CCEC /* Info.plist */,
 			);
 			path = "Chapter03-NavigationBar";
+			sourceTree = "<group>";
+		};
+		5BC6A25823C76B0F00E0CCEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BC6A25B23C76B4500E0CCEC /* arrow-back@2x.png */,
+				5BC6A25923C76B4500E0CCEC /* more@2x.png */,
+				5BC6A25A23C76B4500E0CCEC /* swift_logo@3x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +145,9 @@
 				5BC6A25123C760EE00E0CCEC /* LaunchScreen.storyboard in Resources */,
 				5BC6A24E23C760EE00E0CCEC /* Assets.xcassets in Resources */,
 				5BC6A24C23C760ED00E0CCEC /* Main.storyboard in Resources */,
+				5BC6A25D23C76B4500E0CCEC /* swift_logo@3x.png in Resources */,
+				5BC6A25C23C76B4500E0CCEC /* more@2x.png in Resources */,
+				5BC6A25E23C76B4500E0CCEC /* arrow-back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
