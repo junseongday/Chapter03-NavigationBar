@@ -31,14 +31,26 @@ class ViewController: UIViewController {
         
         self.navigationItem.titleView = tf
         
-        let v = UIView(frame: CGRect(x: 0, y: 0, width: 150, height: 37))
-        v.backgroundColor = UIColor.brown
+        let leftItem = UIBarButtonItem(image: UIImage(named: "arrow-back"), style: .plain, target: self, action: nil)
+        self.navigationItem.leftBarButtonItem = leftItem
         
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: v)
-        
-        let rv = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 37))
-        rv.backgroundColor = UIColor.red
+        let rv = UIView(frame: CGRect(x: 0, y: 0, width: 70, height: 37))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rv)
+        
+        let cnt = UILabel(frame: CGRect(x: 8, y: 10, width: 20, height: 20))
+        cnt.font = UIFont.systemFont(ofSize: 10)
+        cnt.textColor = UIColor(red: 0.60, green: 0.60, blue: 0.60, alpha: 1.0)
+        cnt.text = "12"
+        cnt.textAlignment = .center
+        cnt.layer.cornerRadius = 3
+        cnt.layer.borderWidth = 2
+        cnt.layer.borderColor = UIColor(red: 0.60, green: 0.60, blue: 0.60, alpha: 1.0).cgColor
+        rv.addSubview(cnt)
+        
+        let more = UIButton(frame: CGRect(x: 50, y: 10, width: 16, height: 16))
+        more.setImage(UIImage(named: "more"), for: .normal)
+        rv.addSubview(more)
+        
     }
     
     
